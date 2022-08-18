@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h3 class="textTop">Video Player with progress bar</h3>
+    <p>Tap on Go Live to play</p>
     <div class="video-player">
+        
       <video class="video">
         <source
           src="https://res.cloudinary.com/ifeomaimoh/video/upload/v1650567487/speech_ofvfzq.mp4"
@@ -23,9 +26,10 @@
         <div class="progress">
           <div class="progress__filled"></div>
         </div>
-        <button class="controls__button toggleButton" title="Toggle Play">
-          ►
-        </button>
+        
+        <button class="controls__button" data-skip="-10">« 10s</button>
+        <button class="controls__button" data-skip="25">10s »</button>
+
         <input
           type="range"
           name="volume"
@@ -44,8 +48,10 @@
           step="0.1"
           value="1"
         />
-        <button class="controls__button" data-skip="-10">« 10s</button>
-        <button class="controls__button" data-skip="25">10s »</button>
+        <button class="controls__button toggleButton" id="golive" title="Toggle Play" >
+            Go Live  
+        </button>
+        
       </div>
     </div>
     <script src="script.js"></script>

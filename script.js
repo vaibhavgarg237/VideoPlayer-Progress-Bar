@@ -14,7 +14,7 @@ function togglePlay() {
 }
 
 function updateToggleButton() {
-	toggleButton.innerHTML = video.paused ? "►" : "❚ ❚";
+	toggleButton.innerHTML = video.paused ? "Go Live" : "Go Live";
 }
 
 function handleProgress() {
